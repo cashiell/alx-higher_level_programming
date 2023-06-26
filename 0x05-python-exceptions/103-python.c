@@ -16,7 +16,7 @@ void print_python_list(PyObject *p)
 	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
 
-	j = var->ob_j;
+	j = var->ob_size;
 	x = list->allocated;
 
 	fflush(stdout);
